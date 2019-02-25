@@ -23,6 +23,6 @@
     "express-partials": "^0.3.0",
     "middleware": "^1.0.0",
     "mysql": "^2.16.0",
-    "node": "^11.10.0"
+    "node": "^10.12.0"
   }
 }
