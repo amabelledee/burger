@@ -1,24 +1,29 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-h1
-{
-  align-content: center
-}
+
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: #7ec987;
   }
-  
+
+  .h1 {
+    text-align: center
+  }
   .label {
     font-weight: bold;
   }
   
-  .create-update-form {
+  .create-form {
+    text-align: center;
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background: #7ec9c7;
+  }
+
+  .add {
+    text-align: center
   }
   
   .form-group {
