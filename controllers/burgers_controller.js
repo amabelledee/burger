@@ -1,5 +1,4 @@
 var express = require("express");
-
 var router = express.Router();
 
 // Import the model (cat.js) to use its database functions.
@@ -16,11 +15,11 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/api/burgers", function(req, res) {
+router.post("/api/burgers/", function(req, res) {
   burgers.create([
     "burger_name", "devoured"
   ], [
-    req.body.name, req.body.sleepy
+    req.body.burger_name, req.body.devoured
   ], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
