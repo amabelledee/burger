@@ -1,12 +1,16 @@
+<div class="img">
+<img src="https://image.flaticon.com/icons/svg/1046/1046784.svg" />
+</div>
+
 <h1 class="h1">Burger Menu</h1>
 
 <h2 class="h2">Burgers Available For Eating</h2>
 
 <ul>
   {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
+  {{#unless devoured}}
+  {{> burgers/burger-block devoured=true}}
+  {{/unless}}
   {{/each}}
 </ul>
 
@@ -14,9 +18,9 @@
 
 <ul>
   {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
+  {{#if devoured}}
+  {{> burgers/burger-block devoured=false}}
+  {{/if}}
   {{/each}}
 </ul>
 
